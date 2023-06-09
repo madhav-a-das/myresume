@@ -8,8 +8,8 @@
 
     <style>
       /*--------------------------------------------------------------
-      # Extras
-      --------------------------------------------------------------*/
+# Extras
+--------------------------------------------------------------*/
       .align-content {
         margin-left: auto;
         margin-right: auto;
@@ -29,9 +29,19 @@
         padding-bottom: 16px !important;
         color: wheat;
       }
-
+      /*----------------------------------------------------------*/
+      .body-sec {
+        background: rgb(32, 32, 32, 1);
+      }
       header {
-        background: linear-gradient(to right, #27313e, #3b6397, #3b6397, #2c3e54);
+        background: linear-gradient(
+          to right,
+          #202020,
+          #27313e,
+          #3b6397,
+          #3b6397,
+          #2c3e54
+        );
         min-height: 250px;
         border-radius: 5px;
         top: 0;
@@ -44,10 +54,11 @@
         height: 212px;
         border-radius: 50%;
         border-style: double;
-        margin-left: 100px;
+        border-color: #3a6092;
+        margin-left: 110px;
         margin-top: 15px;
       }
-      header h1 {
+      .h1 {
         position: absolute;
         padding: 5px;
         color: white;
@@ -55,21 +66,18 @@
         margin-top: -200px;
         letter-spacing: 2px;
         font-size: 50px;
-        box-shadow: 5px 5px 10px black;
-        border-radius: 10px;
+        font-weight: 540;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
       header p {
         position: relative;
         color: white;
-        left: 50%;
-        margin-top: -100px;
-        font-size: 30px;
+        left: 46%;
+        margin-top: -120px;
+        font-size: 25px;
         font-weight: lighter;
         letter-spacing: 2px;
         font-family: "Courier New", Courier, monospace;
-      }
-      .left-side {
-        background: rgba(32, 32, 32, 1);
       }
       .about-me {
         position: absolute;
@@ -78,15 +86,106 @@
         top: 260px;
         background: #1e1e1e;
       }
+      .about-me:hover{
+        font-size: larger;
+        box-shadow: #5096f1 3px 3px 10px;
+      }
       .personal-details {
         position: absolute;
         padding: 10px;
         border-radius: 20px;
         top: 560px;
         background: #1e1e1e;
+        width: 39.7%;
+      }
+      .personal-details:hover{
+        font-size: larger;
+        box-shadow: #5096f1 3px 3px 10px;
+      }
+      .contact {
+        position: absolute;
+        padding: 10px;
+        border-radius: 20px;
+        top: 920px;
+        background: #1e1e1e;
+        width: 39.7%;
+        padding-top: 10px;
+        padding-bottom: 40px;
+      }
+      .contact:hover{
+        font-size: 17px;
+        box-shadow: #5096f1 3px 3px 10px;
+      }
+      .projects {
+        position: absolute;
+        padding: 10px;
+        border-radius: 20px;
+        top: 1120px;
+        background: #1e1e1e;
+        width: 39.7%;
+        padding-bottom: 35px;
+      }
+      .projects:hover{
+        font-size: larger;
+        box-shadow: #5096f1 3px 3px 10px;
+      }
+      .git-name {
+        font-size: 20px;
+        position: absolute;
+        margin-top: 5px;
+      }
+      .education {
+        position: absolute;
+        padding: 10px;
+        border-radius: 20px;
+        top: 260px;
+        background: rgb(21, 21, 21);
+        width: 39.7%;
+        left: 50%;
+        padding-bottom: 35px;
+      }
+      .education:hover{
+        font-size: larger;
+        box-shadow: #5096f1 3px 3px 10px;
+      }
+      .skills {
+        position: absolute;
+        padding: 10px;
+        border-radius: 20px;
+        top: 560px;
+        background: rgb(21, 21, 21);
+        width: 39.7%;
+        left: 50%;
+        padding-bottom: 35px;
+      }
+      .skills:hover{
+        font-size: larger;
+        box-shadow: #5096f1 3px 3px 10px;
+      }
+      .language {
+        position: absolute;
+        padding: 10px;
+        border-radius: 20px;
+        top: 1050px;
+        background: rgb(21, 21, 21);
+        width: 39.7%;
+        left: 50%;
+        padding-bottom: 35px;
+      }
+      .language:hover{
+        font-size: larger;
+        box-shadow: #5096f1 3px 3px 10px;
+      }
+      ul {
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 17px;
       }
       .blue {
         color: #4884d1;
+      }
+      .color {
+        color: #5096f1;
       }
       p {
         color: white;
@@ -96,44 +195,165 @@
       pre {
         color: white;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 14px;
       }
       .align {
         margin-top: -30px;
+      }
+      .left {
+        background: #171717;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 16.86%;
+        width: 550px;
+      }
+      .icon-size {
+        width: 32px;
+        height: 32px;
+      }
+      .bold {
+        font-weight: bold;
+        font-size: 16px;
       }
     </style>
   </head>
   <body class="body-sec">
     <header>
       <img class="my-img" src="assets/img/DSC_0031_scaled.jpg" />
-      <h1>Madhav A Das</h1>
+      <p class="h1">Madhav A Das</p>
       <p>Student</p>
     </header>
+    <div class="left"></div>
     <section class="left-side">
       <div class="about-me">
         <h2 class="blue">About Me</h2>
         <div class="align">
-          <p>____________</p>
-          <p>I am Madhav A Das, a beginner frontend developer.</p>
-          <p>I have experience in HTML, CSS, JS, Java, and C programming.</p>
-          <p>I am passionate about creating websites.</p>
-          <p>I enjoy coding, mostly the frontend part.</p>
-          <p>If you want a website of your own, contact me.</p>
+          <p class="blue">
+            ___________________________________________________
+          </p>
+          <p>I'am Madhav A Das, beginner frontend developer.</p>
+          <p>I have experience in HTML, CSS, JS, Java and C programming.</p>
+          <p>I am passionate in creating websites.</p>
+          <p>I enjoy coding, mostly frontend part.</p>
+          <p>If you want any assist just contact me.</p>
         </div>
       </div>
 
       <div class="personal-details">
         <h2 class="blue">Personal Details</h2>
         <div class="align">
-          <p>___________________</p>
-          <p>Name: Madhav A Das</p>
-          <p>DOB: 31-10-2003</p>
-          <p>Age: 19</p>
+          <p class="blue">__________________________________________________</p>
+          <p><span class="bold">Name:</span> Madhav A Das</p>
+          <p><span class="bold">DOB:</span> 31-10-2003</p>
+          <p><span class="bold">Age:</span> 19</p>
+          <p><span class="bold">Mobile no:</span> 8089268081</p>
           <pre>
-            Address: Sree Madhava vihar,
-            Elampazhannoor P.O,
-            Chadayamangalam,
-            Kollam, Kerala,
-          </pre>
+<span class="bold">Address:</span> Sree Madhava vihar,
+                   Elampazhannoor P.O,
+                   Chadayamangalam,
+                   Kollam, Kerala
+        </pre>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h2 class="blue">Contact me</h2>
+        <div class="align">
+          <p class="blue">
+            ___________________________________________________
+          </p>
+          <a href="mailto:madhavadas31@gmail.com" target="_blank" alt="email"><img class="icon-size" src="assets/icons/mail.png"></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://instagram.com/madhav.a.das?igshid=ZDdkNTZiNTM=" target="_blank" alt="instagram"><img class="icon-size" src="assets/icons/instagram.png" ></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/madhav-a-das-464519256/" target="_blank" alt="linkedin"><img class="icon-size" src="assets/icons/linkedin.png"></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://twitter.com/madhav_a_das" target="_blank" alt="twitter"><img class="icon-size" src="assets/icons/twitter.png"></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a title="Madhav A Das#5259" alt="discord"><img class="icon-size" src="assets/icons/discord.png"></a>
+        </div>
+      </div>
+
+      <div class="projects">
+        <h2 class="blue">Projects</h2>
+        <div class="align">
+          <p class="blue">
+            ___________________________________________________
+          </p>
+          <p>
+            To see my projects click on my
+            <span class="bold">GitHub</span> profile down here
+          </p>
+          <p>
+            <a
+              style="text-decoration: none"
+              href="https://github.com/madhav-a-das"
+              target="_blank"
+              ><img src="assets/icons/github.png" /><span class="git-name"
+                >&nbsp;&nbsp;madhav-a-das</span
+              ></a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="education">
+        <h2 class="blue">Education</h2>
+        <div class="align">
+          <p class="blue">
+            ___________________________________________________
+          </p>
+          <p><span class="bold">Degree:</span> B.Tech</p>
+          <p><span class="bold">Major:</span> Computer Science in AI</p>
+          <p>
+            <span class="bold">University:</span> Amrita Viswa Vidhyapeetham,
+            Amritapuri
+          </p>
+          <p><span class="bold">Batch:</span> 2022-26</p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <h2 class="blue">Skills</h2>
+        <div class="align">
+          <p class="blue">
+            ___________________________________________________
+          </p>
+          <p class="wide">HTML</p>
+          <div class="white">
+            <div class="dark-grey" style="height: 28px; width: 95%"></div>
+          </div>
+          <p class="wide">CSS</p>
+          <div class="white">
+            <div class="dark-grey" style="height: 28px; width: 90%"></div>
+          </div>
+          <p class="wide">JavaScript</p>
+          <div class="white">
+            <div class="dark-grey" style="height: 28px; width: 50%"></div>
+          </div>
+          <p class="wide">C program</p>
+          <div class="white">
+            <div class="dark-grey" style="height: 28px; width: 90%"></div>
+          </div>
+          <p class="wide">Java</p>
+          <div class="white">
+            <div class="dark-grey" style="height: 28px; width: 50%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="language">
+        <h2 class="blue">Language</h2>
+        <div class="align">
+          <p class="blue">
+            ___________________________________________________
+          </p>
+          <ul>
+            <li>English</li>
+            <br />
+            <li>Malayalam</li>
+          </ul>
         </div>
       </div>
     </section>

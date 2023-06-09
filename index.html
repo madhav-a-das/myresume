@@ -7,49 +7,27 @@
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
     <style>
-      /*--------------------------------------------------------------
-# Extras
---------------------------------------------------------------*/
-      .align-content {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 980px;
+      body {
+        background: rgb(21, 21, 21);
       }
-      .wide {
-        letter-spacing: 4px;
+      iframe{
+        min-width: 1000px;
+        height: 1500px;
+        border-radius: 10px;
+        box-shadow: black 0px 0px 10px;
       }
-      .white {
-        background-color: #fff !important;
+      @media screen and (max-width: 1400px) {
+        body{
+          background: white;
+        }
       }
-      .dark-grey {
-        background-color: #616161 !important;
-      }
-      .content-padding {
-        padding-top: 16px !important;
-        padding-bottom: 16px !important;
-        color: wheat;
-      }
-      /*----------------------------------------------------------*/
-      .sidebar{
-        background: #616161;
-        min-height: 100%;
-        min-width: 20%;
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-      .my-img{
-        width: 228px;
-       height: 212px;
-        border-radius: 50%;
-      }
+        
     </style>
   </head>
   <body class="body-sec">
-    <section class="sidebar">
-      <div class="img-sec">
-        <img class="my-img" src="assets/img/DSC_0031.jpg" alt="">
-      </div>
-    </section>
+    <div Align="center" class="iframe-sec">
+      <iframe src="iframe.html" frameborder="0"></iframe>
+    </div>
+    
   </body>
 </html>
