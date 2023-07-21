@@ -11,23 +11,34 @@
         background: rgb(21, 21, 21);
       }
       iframe{
-        min-width: 1000px;
+        width: 1000px;
         height: 1500px;
         border-radius: 10px;
         box-shadow: black 0px 0px 10px;
       }
-      @media screen and (max-width: 1400px) {
+      @media screen and (max-width: 700px) {
         body{
           background: white;
         }
+        iframe{
+          width: 500px;
+          height: 2600px;
+          border-radius: 10px;
+        }
+        
       }
         
     </style>
   </head>
   <body class="body-sec">
-    <div Align="center" class="iframe-sec">
+    <div Align="center" class="iframe-sec" id="defaultContent">
       <iframe src="iframe.html" frameborder="0" scrolling="no"></iframe>
     </div>
+
+    <div Align="center" class="iframe-sec" id="specificContent">
+      <iframe src="resize.html" frameborder="0" scrolling="no"></iframe>
+    </div>
     
+  <script src="iframe.js"></script>
   </body>
 </html>
